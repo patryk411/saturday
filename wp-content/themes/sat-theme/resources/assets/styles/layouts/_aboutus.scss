@@ -1,0 +1,47 @@
+&__aboutus {
+    margin: 200px 100px 100px;
+    background-color: #fff;
+    font-family: $roboto;
+    
+    &__content {
+        position: relative;
+
+        &__bg {
+            position: absolute;
+            top: -20%;
+            left: 0%;
+            transform: translate(-50%,0%);
+            width: 600px;
+            height: 630px;
+            background-color: $btn-color;
+        }
+
+            &__img {
+                img {
+                    width: 624px;
+                    height: 436px;
+                }
+            }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            color: $btn-color;
+            margin-top: 80px;
+
+            &--title {
+                font-size: 2.4em;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            &--text {
+                font-size: 1.4em;
+                margin: 10px 0;
+            }
+        }
+    }
+}

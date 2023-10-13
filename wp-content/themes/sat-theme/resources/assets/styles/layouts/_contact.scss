@@ -1,0 +1,126 @@
+&__contact {
+    margin: 100px 0;
+
+    &--heading {
+        font-size: 2.4em;
+        font-family: $work;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $btn-color;
+        margin-bottom: 10px;
+    }
+    
+    &--text {
+        font-size: 1.4em;
+        font-family: $roboto;
+        color: #00000080;
+        width: 55%;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        margin: 20px 0;
+        
+        &__form {
+            .form-group {
+                margin-bottom: 30px;
+                color: #00000080;
+                font-weight: bold;
+
+                label {
+                    font-size: 1.4em;
+                    margin-bottom: 10px;
+                }
+
+                input {
+                    font-size: 1.4em;
+                    background: #f8f9fa;
+                    padding: 25px 15px;
+                    border-radius: 30px;
+                    border: none;
+                    width: 100%;
+                }
+
+                textarea {
+                    background: #f8f9fa;
+                    border: none;
+                    min-height: 30vh;
+                    max-height: 30vh;
+                    font-size: 1.4em;
+                    padding: 10px;
+                }
+
+            }
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4em;
+                width: 150px;
+                height: 50px;
+                background-color: $btn-color;
+                border-radius: 30px;
+                color: #fff;
+                text-decoration: none;
+                margin-left: 15px;
+            }
+
+        }
+        
+
+        &__right {
+            color: #000;
+
+            &__contact {
+                margin-bottom: 20px;
+                &--head {
+                    font-weight: bold;
+                    font-family: $work;
+                    font-size: 1.6em;
+                    color: #52565e;
+                    margin-bottom: 10px;
+                }
+
+                &--text {
+                    font-size: 1.4em;
+                    color: #00000080;
+                    margin-bottom: 0;
+                }
+
+                &__icon-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    background-color: $btn-color;
+                    border-radius: 50%;
+                    
+                    a { 
+                        color: #fff;
+                        i {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+
+                &--goto {
+                    a {
+                        font-size: 1.4em;
+                        color: $btn-color;
+                        text-decoration: none;
+                        font-family: $roboto;
+                        transition: color .3s;
+                    }
+
+                    a:hover {
+                        color: rgba(0, 145, 124, 1);
+                    }
+                }
+            }
+        }
+    }
+}

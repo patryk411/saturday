@@ -1,0 +1,67 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+    font-family: $roboto;
+}
+
+/** Import theme styles */
+@import "common/global";
+@import "common/mixin";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/nav";
+@import "layouts/nav-mobile";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "layouts/section-banner";
+
+.main {
+
+    // position: relative;
+    padding-top: 100px;
+    background-color: #f8f9fa;
+
+    @import "layouts/services";
+    @import "layouts/aboutus";
+    @import "layouts/blog";
+    @import "layouts/faqs";
+    @import "layouts/testimonitals";
+    @import "layouts/socials";
+}
+
+.subpage {
+    @import "layouts/destination";
+    @import "layouts/service-page";
+    @import "layouts/about-page";
+    @import "layouts/contact";
+}
+
+@import "layouts/media1200";
+@import "layouts/media768";
+@import "layouts/media576";
+
+
+
